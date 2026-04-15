@@ -222,7 +222,7 @@ export default function App() {
       const formData = new FormData();
       formData.append("pdf", file);
 
-      const extractRes = await fetch("/api/upload-pdf", {
+      const extractRes = await fetch("https://kortex-backend-j3is.onrender.com/api/upload", {
         method: "POST",
         body: formData,
       });
