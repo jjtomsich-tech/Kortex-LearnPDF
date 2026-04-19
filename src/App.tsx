@@ -281,6 +281,39 @@ export default function App() {
     }
   };
 
+  const downloadHTML = () => {
+  if (!course) return;
+
+  const htmlContent = `
+  <html>
+    <head>
+      <title>${course.course_title}</title>
+    </head>
+    <body>
+      <h1>${course.course_title}</h1>
+
+      ${course.modules.map(module => `
+        <h2>${module.title}</h2>
+        ${module.lessons.map(lesson => `
+          <h3>${lesson.title}</h3>
+          <p>${lesson.content}</p>
+        `).join("")}
+      `).join("")}
+    </body>
+  </html>
+  `;
+
+  const blob = new Blob([htmlContent], { type: "text/html" });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "course.html";
+  a.click();
+
+  URL.revokeObjectURL(url);
+};
+
   const toggleModule = (idx: number) => {
     setExpandedModules(prev => 
       prev.includes(idx) ? prev.filter(i => i !== idx) : [...prev, idx]
