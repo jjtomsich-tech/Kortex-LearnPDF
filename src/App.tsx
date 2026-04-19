@@ -321,50 +321,52 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-bg text-text-primary font-sans selection:bg-accent/30 selection:text-white flex flex-col">
-      {/* Header */}
-      <header className="h-[60px] sticky top-0 z-50 bg-bg/80 backdrop-blur-md border-b border-border flex items-center justify-between px-6">
-        <div className="flex items-center gap-2">
-          <div className="w-5 h-5 bg-accent rounded-[4px] flex items-center justify-center">
-            <Brain className="w-3.5 h-3.5 text-white" />
-          </div>
-          <span className="text-lg font-bold tracking-tight">Kortex: LearnPDF</span>
+  <div className="min-h-screen bg-bg text-text-primary font-sans selection:bg-accent/30 selection:text-white flex flex-col">
+    
+    {/* Header */}
+    <header className="h-[60px] sticky top-0 z-50 bg-bg/80 backdrop-blur-md border-b border-border flex items-center justify-between px-6">
+      
+      <div className="flex items-center gap-2">
+        <div className="w-5 h-5 bg-accent rounded-[4px] flex items-center justify-center">
+          <Brain className="w-3.5 h-3.5 text-white" />
         </div>
-        <div className="flex items-center gap-4">
-          {file && !course && (
-            <div className="text-[12px] color-[#22C55E] bg-[#22C55E]/10 px-[10px] py-[4px] rounded-[12px] flex items-center gap-[6px]">
-              <span className="w-1.5 h-1.5 bg-[#22C55E] rounded-full animate-pulse" />
-              PDF Ready: {file.name}
-            </div>
-          )}
-          {course && (
-  <div className="flex items-center gap-2">
-    <button 
-      onClick={() => {
-        window.location.reload();
-      }}
-      className="text-xs font-semibold text-text-secondary hover:text-text-primary"
-    >
-      New Course
-    </button>
+        <span className="text-lg font-bold tracking-tight">
+          Kortex: LearnPDF
+        </span>
+      </div>
 
-    <button 
-      onClick={downloadHTML}
-      className="text-xs font-semibold text-text-secondary hover:text-text-primary"
-    >
-      Download
-    </button>
-  </div>
-)}
+      <div className="flex items-center gap-4">
 
+        {file && !course && (
+          <div className="text-[12px] color-[#22C55E] bg-[#22C55E]/10 px-[10px] py-[4px] rounded-[12px] flex items-center gap-[6px]">
+            <span className="w-1.5 h-1.5 bg-[#22C55E] rounded-full animate-pulse" />
+            PDF Ready: {file.name}
+          </div>
+        )}
+
+        {course && (
+          <div className="flex items-center gap-2">
+            
+            <button 
+              onClick={() => window.location.reload()}
               className="text-xs font-semibold text-text-secondary hover:text-text-primary flex items-center gap-1.5 transition-colors"
             >
-              <RefreshCw className="w-3.5 h-3.5" />
               New Course
             </button>
-          )}
-        </div>
-      </header>
+
+            <button 
+              onClick={downloadHTML}
+              className="text-xs font-semibold text-text-secondary hover:text-text-primary"
+            >
+              Download
+            </button>
+
+          </div>
+        )}
+
+      </div>
+
+    </header>
 
       <main className="flex-1 flex flex-col overflow-hidden">
         <AnimatePresence mode="wait">
