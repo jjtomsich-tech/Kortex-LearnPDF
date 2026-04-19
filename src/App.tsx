@@ -284,26 +284,101 @@ export default function App() {
   const downloadHTML = () => {
   if (!course) return;
 
-  const htmlContent = `
-  <html>
-    <head>
-      <title>${course.course_title}</title>
-    </head>
-    <body>
-      <h1>${course.course_title}</h1>
+  const html = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>${course.course_title}</title>
 
-      ${course.modules.map(module => `
-        <h2>${module.title}</h2>
-        ${module.lessons.map(lesson => `
-          <h3>${lesson.title}</h3>
-          <p>${lesson.content}</p>
-        `).join("")}
-      `).join("")}
-    </body>
-  </html>
-  `;
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
+  display: flex;
+  height: 100vh;
+}
 
-  const blob = new Blob([htmlContent], { type: "text/html" });
+.sidebar {
+  width: 250px;
+  background: #1a1a1a;
+  padding: 20px;
+  overflow-y: auto;
+  border-right: 1px solid #333;
+}
+
+.sidebar h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.lesson {
+  font-size: 13px;
+  margin: 5px 0;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.lesson:hover {
+  color: white;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text {
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+  ${course.modules.map((m, mIdx) => `
+    <h2>${m.title}</h2>
+    ${m.lessons.map((l, lIdx) => `
+      <div class="lesson" onclick="loadLesson(${mIdx}, ${lIdx})">
+        ${l.title}
+      </div>
+    `).join("")}
+  `).join("")}
+</div>
+
+<div class="content">
+  <div class="title" id="title"></div>
+  <div class="text" id="content"></div>
+</div>
+
+<script>
+const course = ${JSON.stringify(course)};
+
+function loadLesson(mIdx, lIdx) {
+  const lesson = course.modules[mIdx].lessons[lIdx];
+  document.getElementById("title").innerText = lesson.title;
+  document.getElementById("content").innerText = lesson.content;
+}
+
+// default
+loadLesson(0,0);
+</script>
+
+</body>
+</html>
+`;
+
+  const blob = new Blob([html], { type: "text/html" });
   const url = URL.createObjectURL(blob);
 
   const a = document.createElement("a");
