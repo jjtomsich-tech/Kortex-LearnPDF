@@ -515,6 +515,21 @@ loadLesson(0,0);
                   </>
                 )}
               </button>
+              <div className="mt-6 text-center">
+  <p className="text-xs text-text-secondary mb-2">
+    Buy me a coffee ☕
+  </p>
+
+  <a
+    href="ACA_TU_LINK_DE_MERCADOPAGO"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block px-6 py-3 bg-white text-black rounded-xl font-semibold text-sm hover:opacity-90 transition"
+  >
+    Support Kortex
+  </a>
+</div>
+
             </motion.div>
           ) : (
             <motion.div 
