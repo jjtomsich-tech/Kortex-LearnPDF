@@ -338,10 +338,24 @@ export default function App() {
             </div>
           )}
           {course && (
-            <button 
-              onClick={() => {
-  window.location.reload();
-}}
+  <div className="flex items-center gap-2">
+    <button 
+      onClick={() => {
+        window.location.reload();
+      }}
+      className="text-xs font-semibold text-text-secondary hover:text-text-primary"
+    >
+      New Course
+    </button>
+
+    <button 
+      onClick={downloadHTML}
+      className="text-xs font-semibold text-text-secondary hover:text-text-primary"
+    >
+      Download
+    </button>
+  </div>
+)}
 
               className="text-xs font-semibold text-text-secondary hover:text-text-primary flex items-center gap-1.5 transition-colors"
             >
