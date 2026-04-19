@@ -521,7 +521,7 @@ loadLesson(0,0);
   </p>
 
   <a
-    href="link.mercadopago.com.ar/kortexapps"
+    href="https://link.mercadopago.com.ar/kortexapps"
     target="_blank"
     rel="noopener noreferrer"
     className="inline-block px-6 py-3 bg-white text-black rounded-xl font-semibold text-sm hover:opacity-90 transition"
