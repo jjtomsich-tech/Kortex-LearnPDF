@@ -307,10 +307,9 @@ export default function App() {
           {course && (
             <button 
               onClick={() => {
-                setCourse(null);
-                setFile(null);
-                setActiveLesson(null);
-              }}
+  window.location.reload();
+}}
+
               className="text-xs font-semibold text-text-secondary hover:text-text-primary flex items-center gap-1.5 transition-colors"
             >
               <RefreshCw className="w-3.5 h-3.5" />
