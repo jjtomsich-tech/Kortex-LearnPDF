@@ -499,7 +499,23 @@ loadLesson(0,0);
                   {error}
                 </div>
               )}
+              
+<div className="mt-8 text-left">
+  <label className="block text-sm font-semibold mb-2">
+    Coverage
+  </label>
 
+  <select
+    value={coverage}
+    onChange={(e) => setCoverage(e.target.value)}
+    className="w-full bg-surface border border-border rounded-xl px-4 py-3"
+  >
+    <option value="standard">Standard (≈15 pages)</option>
+    <option value="xl">XL (≈50 pages)</option>
+    <option value="xxl">XXL (≈100 pages)</option>
+  </select>
+</div>
+              
               <button
                 disabled={!file || isExtracting || isGenerating}
                 onClick={generateCourse}
