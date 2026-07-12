@@ -244,6 +244,31 @@ export default function App() {
       setIsGenerating(true);
 
       // 2. Generate Course with Gemini (Frontend)
+      let coverageInstructions = "";
+
+if (coverage === "standard") {
+  coverageInstructions = `
+  Coverage: STANDARD
+  Generate a concise course.
+  `;
+}
+
+if (coverage === "xl") {
+  coverageInstructions = `
+  Coverage: XL
+  Generate a much more comprehensive course.
+  Preserve substantially more information from the source.
+  `;
+}
+
+if (coverage === "xxl") {
+  coverageInstructions = `
+  Coverage: XXL
+  Generate the most comprehensive course possible.
+  Preserve as much information as possible from the source.
+  `;
+}
+      
       const prompt = `
         You are an expert educator. Transform the following text extracted from a PDF into a structured interactive learning course.
         Follow the provided schema strictly.
@@ -252,7 +277,10 @@ export default function App() {
         ${text.substring(0, 15000)}
         
         Requirements:
-        - Create a logical flow of modules and lessons.
+
+        ${coverageInstructions}
+
+        - Create a logical flow...
         - Lessons should be detailed but scannable.
         - Flashcards should cover key terms and concepts.
         - Quiz should test understanding of the main points.
