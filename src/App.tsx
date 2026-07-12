@@ -240,6 +240,16 @@ export default function App() {
         throw new Error("The PDF seems to have too little text to generate a course.");
       }
 
+      let maxChars = 15000;
+
+if (coverage === "xl") {
+  maxChars = 45000;
+}
+
+if (coverage === "xxl") {
+  maxChars = 90000;
+}
+      
       setIsExtracting(false);
       setIsGenerating(true);
 
@@ -274,7 +284,7 @@ if (coverage === "xxl") {
         Follow the provided schema strictly.
         
         Text Content:
-        ${text.substring(0, 15000)}
+        ${text.substring(0, maxChars)}
         
         Requirements:
 
