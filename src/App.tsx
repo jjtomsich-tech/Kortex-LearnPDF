@@ -258,24 +258,42 @@ if (coverage === "xxl") {
 
 if (coverage === "standard") {
   coverageInstructions = `
-  Coverage: STANDARD
-  Generate a concise course.
+  Coverage Mode: STANDARD
+
+  Create the course using the current standard approach.
+  Focus on creating a clear and useful learning structure from the provided material.
   `;
 }
 
 if (coverage === "xl") {
   coverageInstructions = `
-  Coverage: XL
-  Generate a much more comprehensive course.
-  Preserve substantially more information from the source.
+  Coverage Mode: XL
+
+  The priority is increasing coverage of the original document.
+
+  Do not focus only on the beginning of the material.
+  Include relevant concepts from different sections of the source text.
+
+  Preserve more chapters, ideas, examples, frameworks and important details from the PDF.
+
+  The goal is not simply longer explanations.
+  The goal is representing a larger portion of the original content while keeping it organized and useful for studying.
   `;
 }
 
 if (coverage === "xxl") {
   coverageInstructions = `
-  Coverage: XXL
-  Generate the most comprehensive course possible.
-  Preserve as much information as possible from the source.
+  Coverage Mode: XXL
+
+  The priority is maximum coverage of the original document.
+
+  Process and represent information from the entire available source text whenever possible.
+
+  Include important concepts from early, middle and later sections of the document.
+
+  Avoid losing secondary but relevant information that could matter for exams, understanding, or practical application.
+
+  The goal is to create the most complete learning version possible from the provided material, while maintaining clarity and structure.
   `;
 }
       
