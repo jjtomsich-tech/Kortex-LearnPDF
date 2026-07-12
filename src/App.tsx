@@ -202,6 +202,8 @@ export default function App() {
   const [activeLesson, setActiveLesson] = useState<{ mIdx: number; lIdx: number } | null>(null);
   const [expandedModules, setExpandedModules] = useState<number[]>([]);
 
+  const [coverage, setCoverage] = useState("standard");
+
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
