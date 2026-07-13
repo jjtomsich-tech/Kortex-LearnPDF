@@ -289,15 +289,19 @@ if (coverage === "xxl") {
   coverageInstructions = `
   Coverage Mode: XXL
 
-  The priority is maximum coverage of the original document.
+  The priority is maximizing coverage of the original document.
 
-  Process and represent information from the entire available source text whenever possible.
+  Analyze the document as a whole and preserve its structure as faithfully as possible.
 
-  Include important concepts from early, middle and later sections of the document.
+  Represent every major chapter, section and important topic.
 
-  Avoid losing secondary but relevant information that could matter for exams, understanding, or practical application.
+  If the PDF contains chapter titles, section titles or numbered parts, preserve them whenever possible.
 
-  The goal is to create the most complete learning version possible from the provided material, while maintaining clarity and structure.
+  Avoid skipping concepts, even if they appear near the end of the document.
+
+  Maintain the original progression of ideas whenever possible.
+
+  Compress explanations only when necessary, but never by omitting entire sections.
   `;
 }
       
