@@ -275,16 +275,28 @@ if (coverage === "xl") {
 
   Analyze the document as a whole and preserve its overall structure whenever possible.
 
-  If the PDF contains chapters, sections or numbered parts, preserve them in the generated course instead of merging multiple important sections together.
+  If the source document already has a chapter or section structure, use it as the primary structure of the course whenever possible.
+
+  Preserve the original chapter and section titles whenever they are meaningful.
+
+  Use the original chapter titles as module or lesson titles whenever appropriate.
 
   Represent every major chapter or topic.
 
   Do not omit important sections simply because they appear later in the document.
 
+  Do not merge multiple major chapters into a single lesson or module unless absolutely necessary.
+
+  Avoid creating meta-summaries that combine many chapters into a single overview.
+
+  Coverage should prioritize faithfully representing the structure of the original document rather than inventing a new organization.
+
+  Follow the original progression of the document from beginning to end.
+
   Compression is encouraged inside each lesson, but coverage must be expanded.
 
   Generate the course in the same language as the source document.
-  
+
   Do not translate unless explicitly requested.
   `;
 }
@@ -297,18 +309,30 @@ if (coverage === "xxl") {
 
   Analyze the document as a whole and preserve its structure as faithfully as possible.
 
+  If the source document already has a chapter or section structure, use it as the primary structure of the course whenever possible.
+
+  Preserve the original chapter and section titles whenever they are meaningful.
+
+  Use the original chapter titles as module or lesson titles whenever appropriate.
+
   Represent every major chapter, section and important topic.
 
-  If the PDF contains chapter titles, section titles or numbered parts, preserve them whenever possible.
+  Do not merge multiple major chapters into a single lesson or module unless absolutely necessary.
+
+  Avoid creating meta-summaries that combine many chapters into a single overview.
+
+  Coverage should prioritize faithfully representing the structure of the original document rather than inventing a new organization.
 
   Avoid skipping concepts, even if they appear near the end of the document.
+
+  Follow the original progression of the document from beginning to end.
 
   Maintain the original progression of ideas whenever possible.
 
   Compress explanations only when necessary, but never by omitting entire sections.
 
   Generate the course in the same language as the source document.
-  
+
   Do not translate unless explicitly requested.
   `;
 }
