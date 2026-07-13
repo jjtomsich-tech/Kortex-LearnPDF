@@ -271,15 +271,17 @@ if (coverage === "xl") {
   coverageInstructions = `
   Coverage Mode: XL
 
-  The priority is increasing coverage of the original document.
+  The priority is increasing document coverage, not increasing verbosity.
 
-  Do not focus only on the beginning of the material.
-  Include relevant concepts from different sections of the source text.
+  Analyze the document as a whole and preserve its overall structure whenever possible.
 
-  Preserve more chapters, ideas, examples, frameworks and important details from the PDF.
+  If the PDF contains chapters, sections or numbered parts, preserve them in the generated course instead of merging multiple important sections together.
 
-  The goal is not simply longer explanations.
-  The goal is representing a larger portion of the original content while keeping it organized and useful for studying.
+  Represent every major chapter or topic.
+
+  Do not omit important sections simply because they appear later in the document.
+
+  Compression is encouraged inside each lesson, but coverage must be expanded.
   `;
 }
 
