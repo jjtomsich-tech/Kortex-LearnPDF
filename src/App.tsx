@@ -236,6 +236,8 @@ export default function App() {
       
       const { text } = result.data;
 
+      console.log("TEXT LENGTH:", text.length);
+
       if (!text || text.trim().length < 50) {
         throw new Error("The PDF seems to have too little text to generate a course.");
       }
