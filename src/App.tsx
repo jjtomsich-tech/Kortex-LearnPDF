@@ -282,6 +282,10 @@ if (coverage === "xl") {
   Do not omit important sections simply because they appear later in the document.
 
   Compression is encouraged inside each lesson, but coverage must be expanded.
+
+  Generate the course in the same language as the source document.
+  
+  Do not translate unless explicitly requested.
   `;
 }
 
@@ -302,6 +306,10 @@ if (coverage === "xxl") {
   Maintain the original progression of ideas whenever possible.
 
   Compress explanations only when necessary, but never by omitting entire sections.
+
+  Generate the course in the same language as the source document.
+  
+  Do not translate unless explicitly requested.
   `;
 }
       
