@@ -600,7 +600,7 @@ loadLesson(0,0);
               
 <div className="mt-8 text-left">
   <label className="block text-sm font-semibold mb-2">
-  Coverage Mode
+  Coverage
   </label>
 
   <select
@@ -627,12 +627,12 @@ loadLesson(0,0);
     <option value="essentials">Essentials</option>
     <option value="academic">Academic</option>
     <option value="insight">Insight</option>
-    <option value="insightplus">Insight+</option>
-    <option value="thinker">Thinker</option>
-    <option value="synthesis">Synthesis</option>
-    <option value="analyst">Analyst</option>
-    <option value="research">Research</option>
-    <option value="scientific">Scientific (Beta)</option>
+    <option value="insightplus">Research</option>
+    <option value="thinker">Insight+</option>
+    <option value="synthesis">Thinker</option>
+    <option value="analyst">Synthesis</option>
+    <option value="research">Scientific (Beta)</option>
+    <option value="scientific">Analyst</option>
   </select>
 </div>              
               
