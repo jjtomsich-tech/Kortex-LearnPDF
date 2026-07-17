@@ -600,7 +600,7 @@ loadLesson(0,0);
               
 <div className="mt-8 text-left">
   <label className="block text-sm font-semibold mb-2">
-    Coverage
+  Coverage Mode
   </label>
 
   <select
