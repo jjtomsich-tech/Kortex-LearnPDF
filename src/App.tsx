@@ -508,24 +508,51 @@ The objective is helping the learner analyze the document critically and objecti
 }      
       
       const prompt = `
-        You are an expert educator. Transform the following text extracted from a PDF into a structured interactive learning course.
+        You are an expert educator specialized in transforming source material into effective learning experiences.
+
+        Your task is to transform the following text extracted from a PDF into a structured interactive learning course.
+
         Follow the provided schema strictly.
-        
+
         Text Content:
         ${text.substring(0, maxChars)}
-        
-        Requirements:
 
+        Configuration Modes:
+
+        The generated course must follow these configuration modes.
+
+        Coverage Mode:
         ${coverageInstructions}
 
+        Depth Mode:
         ${depthInstructions}
 
-        - Create a logical flow...
+        These modes define HOW the educational transformation should be performed.
+
+        The course generation is controlled by multiple independent dimensions.
+
+        Each dimension modifies a different aspect of the learning experience.
+
+        Do not let one dimension replace another.
+        Combine all selected modes together.
+
+        Coverage controls the amount and distribution of source material represented.
+
+        Depth controls the intellectual processing, explanation style and learning approach.
+
+        Do not ignore these modes.
+        They are core parameters of the course generation process.
+
+        General Course Requirements:
+
+        - Create a logical learning progression.
+        - Adapt explanations according to the selected Depth Mode.
+        - Preserve the intended Coverage Mode.
         - Lessons should be detailed but scannable.
         - Flashcards should cover key terms and concepts.
         - Quiz should test understanding of the main points.
-        - Highlights should be punchy bullet points.
-        - Final insights should summarize the core value of the material.
+        - Highlights should summarize important ideas.
+        - Final insights should reflect the selected Depth Mode.
       `;
 
       const response = await ai.models.generateContent({
