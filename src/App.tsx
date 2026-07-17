@@ -340,6 +340,53 @@ if (coverage === "xxl") {
   Do not translate unless explicitly requested.
   `;
 }
+
+if (depth === "essentials") {
+  depthInstructions = `
+  Depth Mode: ESSENTIALS
+The goal is rapid learning and efficient review.
+Prioritize only the information that is essential for understanding and remembering the subject.
+Produce a concise, practical and highly focused course.
+Remove secondary details, repetitions, anecdotes, excessive historical context and non-essential explanations whenever possible.
+Compress the material aggressively while preserving the core concepts.
+Favor clarity over completeness.
+Structure the content so it can be reviewed quickly before an exam or assessment.
+Do not generate new ideas, interpretations or reflections.
+Do not expand beyond the information contained in the source document unless absolutely necessary for basic comprehension.
+The objective is helping the learner understand and remember the most important concepts in the shortest possible time.
+  `;
+}
+
+if (depth === "academic") {
+  depthInstructions = `
+  Depth Mode: ACADEMIC
+The goal is academic rigor.
+Explain concepts using precise terminology and complete definitions.
+Preserve conceptual accuracy and formal structure.
+Whenever appropriate, include formal examples that improve understanding.
+Maintain an educational style equivalent to university-level teaching.
+Do not oversimplify concepts merely to reduce length.
+Present ideas in a logical progression that supports systematic learning.
+Avoid unnecessary creativity or speculation.
+Prioritize precision, correctness and educational quality.
+  `;
+}
+
+if (depth === "insight") {
+  depthInstructions = `
+  Depth Mode: INSIGHT
+The goal is deep understanding rather than memorization.
+Go beyond describing concepts.
+Explain why each important idea matters.
+Identify relationships between concepts throughout the document.
+Highlight cause-and-effect relationships whenever appropriate.
+Provide historical or conceptual context that improves understanding.
+Connect related disciplines whenever those connections naturally emerge from the material.
+Help the learner understand not only what the document says, but why the ideas are significant and how they interact.
+Do not invent new theories or unsupported conclusions.
+Focus on revealing connections already implicit in the source material.
+  `;
+}
       
       const prompt = `
         You are an expert educator. Transform the following text extracted from a PDF into a structured interactive learning course.
