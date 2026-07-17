@@ -387,6 +387,125 @@ Do not invent new theories or unsupported conclusions.
 Focus on revealing connections already implicit in the source material.
   `;
 }
+
+if (depth === "research") {
+  depthInstructions = `
+  Depth Mode: RESEARCH
+The goal is supporting research-oriented reading.
+Identify:
+- evidence
+- hypotheses
+- methodologies
+- experimental design when applicable
+- limitations
+- uncertainties
+- assumptions
+- future research opportunities
+Clearly distinguish established evidence from interpretation.
+Highlight methodological strengths and weaknesses whenever relevant.
+Identify unanswered questions suggested by the document.
+Help the learner understand not only the conclusions but also how those conclusions were reached.
+Maintain an evidence-oriented and academically rigorous approach.
+  `;
+}
+
+if (depth === "insightplus") {
+  depthInstructions = `
+  Depth Mode: INSIGHT+
+The goal is generating new insights inspired by the document.
+After explaining the source material accurately, expand its intellectual potential.
+You may generate:
+- reasonable hypotheses
+- possible applications
+- future possibilities
+- creative interpretations
+- interdisciplinary connections
+- lateral thinking
+- alternative perspectives
+- innovative ideas inspired by the material
+Clearly distinguish between:
+- established facts
+- logical inferences
+- speculative ideas
+- creative proposals
+Never present speculation as established knowledge.
+The purpose is stimulating creativity, expanding possibilities and helping the learner discover ideas that naturally emerge from the document while remaining intellectually honest.
+  `;
+}
+
+if (depth === "thinker") {
+  depthInstructions = `
+  Depth Mode: THINKER
+The goal is thoughtful reflection.
+Do not focus on creativity.
+Instead, encourage critical and philosophical thinking.
+Explore:
+- philosophical implications
+- ethical questions
+- human consequences
+- social impact
+- psychological dimensions
+- cultural significance
+- long-term implications
+Whenever appropriate, formulate meaningful questions that encourage reflection.
+Do not force definitive answers to every question.
+The objective is helping the learner think more deeply about the implications of the knowledge rather than simply acquiring information.
+  `;
+}
+
+if (depth === "synthesis") {
+  depthInstructions = `
+  Depth Mode: SYNTHESIS
+The goal is conceptual integration.
+Treat the entire document as one coherent knowledge system.
+Identify the major ideas and show how they connect to one another.
+Integrate concepts that appear in different chapters into a unified conceptual framework.
+Reduce fragmentation by emphasizing relationships between ideas.
+Construct a coherent mental model of the document.
+Do not introduce new knowledge or speculative ideas.
+Your task is reorganizing existing knowledge into a clearer and more interconnected structure.
+  `;
+}
+
+if (depth === "scientific") {
+  depthInstructions = `
+  Depth Mode: SCIENTIFIC
+The goal is assisting scientific work at the highest possible level.
+Maintain maximum methodological rigor.
+Prioritize evidence quality over narrative simplicity.
+Whenever appropriate:
+- compare methodologies
+- evaluate strength of evidence
+- identify knowledge gaps
+- distinguish correlation from causation
+- identify reproducibility concerns
+- connect complementary disciplines
+- compare competing explanations
+- identify unanswered scientific questions
+- suggest testable future research directions
+Do not speculate without clearly labeling uncertainty.
+Maintain complete scientific neutrality.
+Every conclusion should remain proportional to the available evidence.
+This mode is intended to support real scientific reasoning rather than simply producing a more technical summary.
+  `;
+}
+
+if (depth === "analyst") {
+  depthInstructions = `
+  Depth Mode: ANALYST
+The goal is objective analytical evaluation.
+Maintain a serious, rigorous and highly neutral tone.
+Separate facts from opinions.
+Identify arguments and supporting evidence.
+Evaluate logical consistency.
+Identify assumptions whenever possible.
+Point out strengths and weaknesses of arguments presented in the document.
+Detect contradictions, inconsistencies or unresolved tensions if they exist.
+Avoid emotional language.
+Avoid unnecessary creativity.
+The objective is helping the learner analyze the document critically and objectively.
+  `;
+}      
       
       const prompt = `
         You are an expert educator. Transform the following text extracted from a PDF into a structured interactive learning course.
