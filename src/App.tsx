@@ -260,6 +260,8 @@ if (coverage === "xxl") {
       // 2. Generate Course with Gemini (Frontend)
       let coverageInstructions = "";
 
+      let depthInstructions = "";
+
 if (coverage === "standard") {
   coverageInstructions = `
   Coverage Mode: STANDARD
