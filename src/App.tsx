@@ -613,6 +613,28 @@ loadLesson(0,0);
     <option value="xxl">XXL (≈100 pages)</option>
   </select>
 </div>
+
+<div className="mt-8 text-left">
+  <label className="block text-sm font-semibold mb-2">
+    Depth
+  </label>
+
+  <select
+    value={depth}
+    onChange={(e) => setDepth(e.target.value)}
+    className="w-full bg-surface border border-border rounded-xl px-4 py-3"
+  >
+    <option value="essentials">Essentials</option>
+    <option value="academic">Academic</option>
+    <option value="insight">Insight</option>
+    <option value="insightplus">Insight+</option>
+    <option value="thinker">Thinker</option>
+    <option value="synthesis">Synthesis</option>
+    <option value="analyst">Analyst</option>
+    <option value="research">Research</option>
+    <option value="scientific">Scientific (Beta)</option>
+  </select>
+</div>              
               
               <button
                 disabled={!file || isExtracting || isGenerating}
