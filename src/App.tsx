@@ -530,6 +530,26 @@ Point out strengths and weaknesses of arguments presented in the document.
 Detect contradictions, inconsistencies or unresolved tensions if they exist.
 Avoid emotional language.
 Avoid unnecessary creativity.
+
+Always begin by explaining the document faithfully. Then analyze the structure and quality of the reasoning and perform the analytical evaluation.
+
+For each important argument, identify:
+- the central claim
+- the supporting evidence
+- underlying assumptions
+- the logical reasoning connecting evidence to conclusions
+Clearly distinguish:
+- observations
+- interpretations
+- conclusions
+- opinions
+When appropriate, identify:
+- possible counterarguments
+- limitations of the reasoning
+- alternative explanations
+- unsupported generalizations
+Evaluate arguments fairly and proportionally.
+Do not criticize merely for the sake of criticism.
 The objective is helping the learner analyze the document critically and objectively.
   `;
 }      
