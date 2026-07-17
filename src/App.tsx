@@ -406,24 +406,56 @@ Maintain an evidence-oriented and academically rigorous approach.
 if (depth === "insightplus") {
   depthInstructions = `
   Depth Mode: INSIGHT+
-The goal is generating new insights inspired by the document.
-After explaining the source material accurately, expand its intellectual potential.
-You may generate:
-- reasonable hypotheses
-- possible applications
-- future possibilities
-- creative interpretations
-- interdisciplinary connections
-- lateral thinking
-- alternative perspectives
-- innovative ideas inspired by the material
-Clearly distinguish between:
-- established facts
-- logical inferences
-- speculative ideas
-- creative proposals
-Never present speculation as established knowledge.
-The purpose is stimulating creativity, expanding possibilities and helping the learner discover ideas that naturally emerge from the document while remaining intellectually honest.
+
+  The goal is generating new insights inspired by the document.
+
+  The source material should be treated as a starting point for intellectual exploration, not only as content to summarize or explain.
+
+  Explore unexpected connections with other fields whenever meaningful.
+
+  Explore possible consequences of these ideas when they are extended into new contexts.
+
+  Use thought experiments when they help explore the potential meaning or implications of an idea.
+
+  First, explain the original ideas accurately and preserve the meaning of the source material.
+
+  Then expand the intellectual potential of those ideas by exploring their possible implications, connections and applications.
+
+  You may generate:
+  - reasonable hypotheses
+  - possible applications
+  - future possibilities
+  - creative interpretations
+  - interdisciplinary connections
+  - lateral thinking
+  - alternative perspectives
+  - innovative ideas inspired by the material
+
+  Clearly distinguish between:
+  - established facts
+  - logical inferences
+  - speculative ideas
+  - creative proposals
+
+  Never present speculation as established knowledge, but allow creative exploration when it is clearly identified as an inference, possibility or proposal.
+
+  Insight+ expansions should be integrated inside the lessons themselves, not only in final summaries or closing insights.
+
+  Each relevant lesson should combine:
+  1. Accurate explanation of the source material.
+  2. Deeper understanding of the original ideas.
+  3. Additional exploration of new connections, applications, hypotheses or perspectives inspired by the material.
+
+  Prefer concrete expansions over abstract reflections.
+
+  When possible, transform insights into:
+  - examples
+  - scenarios
+  - applications
+  - strategies
+  - new perspectives
+
+  The purpose is stimulating creativity, expanding possibilities and helping the learner discover ideas that naturally emerge from the document while remaining intellectually honest.
   `;
 }
 
