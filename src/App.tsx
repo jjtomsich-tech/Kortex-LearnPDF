@@ -538,6 +538,10 @@ For each important argument, identify:
 - the supporting evidence
 - underlying assumptions
 - the logical reasoning connecting evidence to conclusions
+
+Evaluate not only what arguments claim, but whether the evidence provided is sufficient to support those conclusions.
+Analyze the strength of the reasoning and inferences connecting evidence to claims.
+
 Clearly distinguish:
 - observations
 - interpretations
@@ -547,13 +551,25 @@ Also clearly distinguish between:
 - The author's own analysis and arguments.
 - Logical consequences that follow from the author's ideas.
 - Your own analytical evaluation based on logical reasoning and critical analysis.
+
+When appropriate, include a separate analytical evaluation section after explaining the author's ideas.
+This section should not summarize the document again. It should provide an independent analysis of:
+- argument strength
+- evidence quality
+- logical consistency
+- hidden assumptions
+- possible limitations or alternative interpretations.
+
 When appropriate, identify:
 - possible counterarguments
 - limitations of the reasoning
 - alternative explanations
 - unsupported generalizations
+
 Evaluate arguments fairly and proportionally.
-Do not criticize merely for the sake of criticism.
+Critique ideas only when the analysis reveals genuine weaknesses, unsupported assumptions, logical gaps or limitations.
+Do not avoid criticism when it is justified by the evidence and reasoning.
+The absence of obvious errors does not mean an argument cannot be examined. Analyze the assumptions, scope and limitations of every important claim.
 The objective is helping the learner analyze the document critically and objectively.
   `;
 }      
