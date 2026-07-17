@@ -483,8 +483,9 @@ if (depth === "synthesis") {
   depthInstructions = `
   Depth Mode: SYNTHESIS
 The goal is conceptual integration.
-Treat the entire document as one coherent knowledge system.
+Treat the available source material as one coherent knowledge system.
 Identify the major ideas and show how they connect to one another.
+Whenever multiple lessons or concepts share underlying principles, explicitly identify and explain those common patterns.
 Integrate concepts that appear in different chapters into a unified conceptual framework.
 Reduce fragmentation by emphasizing relationships between ideas.
 Construct a coherent mental model of the document.
