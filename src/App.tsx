@@ -543,6 +543,10 @@ Clearly distinguish:
 - interpretations
 - conclusions
 - opinions
+Also clearly distinguish between:
+- The author's own analysis and arguments.
+- Logical consequences that follow from the author's ideas.
+- Your own analytical evaluation based on logical reasoning and critical analysis.
 When appropriate, identify:
 - possible counterarguments
 - limitations of the reasoning
