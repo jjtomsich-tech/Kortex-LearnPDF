@@ -399,6 +399,8 @@ Focus on revealing connections already implicit in the source material.
 
         ${coverageInstructions}
 
+        ${depthInstructions}
+
         - Create a logical flow...
         - Lessons should be detailed but scannable.
         - Flashcards should cover key terms and concepts.
