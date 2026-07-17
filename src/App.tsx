@@ -204,6 +204,8 @@ export default function App() {
 
   const [coverage, setCoverage] = useState("standard");
 
+  const [depth, setDepth] = useState("essentials");
+
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
