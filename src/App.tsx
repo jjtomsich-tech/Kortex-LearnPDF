@@ -266,8 +266,10 @@ if (coverage === "standard") {
   coverageInstructions = `
   Coverage Mode: STANDARD
 
-  Create the course using the current standard approach.
-  Focus on creating a clear and useful learning structure from the provided material.
+  Create the course using the standard approach.
+
+  Focus on creating a clear and useful learning structure from the available material.
+
   `;
 }
 
@@ -275,29 +277,25 @@ if (coverage === "xl") {
   coverageInstructions = `
   Coverage Mode: XL
 
-  The priority is increasing document coverage, not increasing verbosity.
+  The priority is increasing coverage of the provided source material, not increasing verbosity.
 
-  Analyze the document as a whole and preserve its overall structure whenever possible.
+  The provided text segment is the complete available source for this generation.
 
-  If the source document already has a chapter or section structure, use it as the primary structure of the course whenever possible.
+  Only analyze and transform the information contained in the provided text segment.
 
-  Preserve the original chapter and section titles whenever they are meaningful.
+  Do not use prior knowledge about the original document.
+  Do not reconstruct missing chapters or sections.
+  Do not add information from parts of the document that are not included in the provided text.
 
-  Use the original chapter titles as module or lesson titles whenever appropriate.
+  Preserve the internal structure of the provided material whenever possible.
 
-  Represent every major chapter or topic.
+  If the provided text contains chapter titles, section titles or numbered parts, preserve them as module or lesson titles whenever appropriate.
 
-  Do not omit important sections simply because they appear later in the document.
+  Represent the main topics contained inside the provided text segment.
 
-  Do not merge multiple major chapters into a single lesson or module unless absolutely necessary.
+  Do not merge multiple important sections from the provided material into a single generic summary unless necessary.
 
-  Avoid creating meta-summaries that combine many chapters into a single overview.
-
-  Coverage should prioritize faithfully representing the structure of the original document rather than inventing a new organization.
-
-  Follow the original progression of the document from beginning to end.
-
-  Compression is encouraged inside each lesson, but coverage must be expanded.
+  Compression is allowed inside lessons, but do not remove important concepts from the available material.
 
   Generate the course in the same language as the source document.
 
@@ -309,31 +307,27 @@ if (coverage === "xxl") {
   coverageInstructions = `
   Coverage Mode: XXL
 
-  The priority is maximizing coverage of the original document.
+  The priority is maximizing coverage of the provided source material.
 
-  Analyze the document as a whole and preserve its structure as faithfully as possible.
+  The provided text segment is the complete available source for this generation.
 
-  If the source document already has a chapter or section structure, use it as the primary structure of the course whenever possible.
+  Only analyze and transform the information contained in the provided text segment.
 
-  Preserve the original chapter and section titles whenever they are meaningful.
+  Do not use prior knowledge about the original document.
+  Do not reconstruct missing chapters or sections.
+  Do not complete the document from memory.
 
-  Use the original chapter titles as module or lesson titles whenever appropriate.
+  Preserve the internal structure of the provided material as faithfully as possible.
 
-  Represent every major chapter, section and important topic.
+  If the provided text contains chapter titles, section titles or numbered parts, preserve them as module or lesson titles whenever appropriate.
 
-  Do not merge multiple major chapters into a single lesson or module unless absolutely necessary.
+  Represent all major topics and sections that appear inside the provided text segment.
 
-  Avoid creating meta-summaries that combine many chapters into a single overview.
+  Avoid creating broad summaries that combine multiple independent sections.
 
-  Coverage should prioritize faithfully representing the structure of the original document rather than inventing a new organization.
+  Maintain the progression of ideas present in the provided material.
 
-  Avoid skipping concepts, even if they appear near the end of the document.
-
-  Follow the original progression of the document from beginning to end.
-
-  Maintain the original progression of ideas whenever possible.
-
-  Compress explanations only when necessary, but never by omitting entire sections.
+  Compress explanations only when necessary, but never by omitting complete sections that are present in the provided text.
 
   Generate the course in the same language as the source document.
 
