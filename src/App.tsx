@@ -204,6 +204,8 @@ export default function App() {
 
   const [coverage, setCoverage] = useState("standard");
 
+  const [adaptation, setAdaptation] = useState("adult");
+
   const [depth, setDepth] = useState("essentials");
 
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -632,6 +634,9 @@ if (adaptation === "adult") {
         Depth Mode:
         ${depthInstructions}
 
+        Adaptation Mode:
+        ${adaptationInstructions}
+
         These modes define HOW the educational transformation should be performed.
 
         The course generation is controlled by multiple independent dimensions.
@@ -644,6 +649,8 @@ if (adaptation === "adult") {
         Coverage controls the amount and distribution of source material represented.
 
         Depth controls the intellectual processing, explanation style and learning approach.
+
+        Adaptation controls how the resulting knowledge is communicated according to the learner's developmental level.
 
         Do not ignore these modes.
         They are core parameters of the course generation process.
