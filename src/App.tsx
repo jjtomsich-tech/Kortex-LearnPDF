@@ -875,16 +875,21 @@ Connect concepts when appropriate to:
 
 Cultural references may be used when they genuinely clarify, illustrate or make an idea memorable.
 
-They should feel contextual and natural rather than performative.
+Conceptual Accessibility:
+
+Do not assume that learners aged 12–15 will automatically understand abstract, academic or professional language simply because they can handle moderate abstraction.
+
+When an idea is abstract, unfamiliar or conceptually dense, first anchor it in something the learner can easily recognize: a familiar situation, contemporary context, humorous comparison, visual metaphor, cultural reference, meme-like scenario or memorable example.
+
+The purpose is not to reduce the complexity of the idea, but to create an accessible mental representation of it before developing the more abstract explanation.
+
+Use these accessible representations as vehicles for the concept, not as replacements for the concept itself.
 
 Humor and Memes:
 
 Humor, memes and playful formats may be used when they genuinely improve attention, comprehension or memorability.
 
 A lesson or module may occasionally contain a particularly effective humorous or meme-like explanation when the format creates a strong connection with the concept.
-
-Do not force memes into every lesson.
-Do not use humor merely to make the material appear younger.
 
 A meme or humorous analogy should function as a cognitive shortcut, memorable representation, contrast or illustration of an idea, while preserving the underlying meaning.
 
