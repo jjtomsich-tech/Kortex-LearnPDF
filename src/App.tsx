@@ -1313,6 +1313,20 @@ Preserve important nuance, uncertainty, evidence, exceptions and competing inter
 The objective is to minimize unnecessary friction between the learner and the knowledge while preserving enough depth and structure for accurate understanding, retention and effective application.
   `;
 }      
+
+if (adaptation === "natural") {
+  adaptationInstructions = `
+    Adaptation Mode: NATURAL
+
+    Preserve the natural presentation style produced by the selected Coverage and Depth Modes.
+
+    Do not adapt the language, vocabulary, examples, structure, tone or complexity for a specific age group or professional context.
+
+    Allow the selected Depth and Coverage Modes to determine the educational presentation naturally.
+
+    Do not introduce additional pedagogical simplification, personalization or contextual framing beyond what is required by the selected Coverage and Depth Modes.
+  `;
+}      
       
       const prompt = `
         You are an expert educator specialized in transforming source material into effective learning experiences.
@@ -1655,6 +1669,7 @@ loadLesson(0,0);
     onChange={(e) => setAdaptation(e.target.value)}
     className="w-full bg-surface border border-border rounded-xl px-4 py-3"
   >
+    <option value="natural">Natural/Neutral</option>
     <option value="6-8">6–8 años</option>
     <option value="9-12">9–12 años</option>
     <option value="12-15">12–15 años</option>
