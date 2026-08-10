@@ -262,6 +262,8 @@ if (coverage === "xxl") {
 
       let depthInstructions = "";
 
+      let adaptationInstructions = "";
+
 if (coverage === "standard") {
   coverageInstructions = `
   Coverage Mode: STANDARD
@@ -571,6 +573,42 @@ Critique ideas only when the analysis reveals genuine weaknesses, unsupported as
 Do not avoid criticism when it is justified by the evidence and reasoning.
 The absence of obvious errors does not mean an argument cannot be examined. Analyze the assumptions, scope and limitations of every important claim.
 The objective is helping the learner analyze the document critically and objectively.
+  `;
+}      
+
+if (adaptation === "6-8") {
+  adaptationInstructions = `
+  (aca va el prompt de 6-8 años)
+  `;
+}
+
+if (adaptation === "9-12") {
+  adaptationInstructions = `
+  (aca va el prompt de 9-12 años)
+  `;
+}
+
+if (adaptation === "12-15") {
+  adaptationInstructions = `
+  (aca va el prompt de 12-15 años)
+  `;
+}
+
+if (adaptation === "15-18") {
+  adaptationInstructions = `
+  (aca va el prompt de 15-18 años)
+  `;
+}
+
+if (adaptation === "18-21") {
+  adaptationInstructions = `
+  (aca va el prompt de 18-21 años)
+  `;
+}
+
+if (adaptation === "adult") {
+  adaptationInstructions = `
+  (aca va el prompt de Adulto / Profesional)
   `;
 }      
       
