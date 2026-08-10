@@ -944,6 +944,25 @@ loadLesson(0,0);
     <option value="analyst">Analyst</option>
   </select>
 </div>              
+
+<div className="mt-8 text-left">
+  <label className="block text-sm font-semibold mb-2">
+    Adaptation
+  </label>
+
+  <select
+    value={adaptation}
+    onChange={(e) => setAdaptation(e.target.value)}
+    className="w-full bg-surface border border-border rounded-xl px-4 py-3"
+  >
+    <option value="6-8">6–8 años</option>
+    <option value="9-12">9–12 años</option>
+    <option value="12-15">12–15 años</option>
+    <option value="15-18">15–18 años</option>
+    <option value="18-21">18–21 años</option>
+    <option value="adult">Adulto / Profesional</option>
+  </select>
+</div>
               
               <button
                 disabled={!file || isExtracting || isGenerating}
