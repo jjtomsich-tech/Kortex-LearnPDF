@@ -830,9 +830,9 @@ The objective is to help the learner build a clear conceptual model, become comf
 
 if (adaptation === "12-15") {
   adaptationInstructions = `
-  Adaptation Mode: 12–15 YEARS OLD
+Adaptation Mode: 12–15 YEARS OLD
 
-The goal is connecting increasingly abstract concepts with familiar contemporary contexts while encouraging independent thought.
+The goal is connecting increasingly abstract concepts with familiar contemporary experiences while encouraging independent thought, recognition and discovery.
 
 Adapt the educational experience for learners approximately 12–15 years old.
 
@@ -844,8 +844,8 @@ At this stage, learners can work with:
 - causal chains
 - increasingly complex social and conceptual relationships
 
-Do not unnecessarily reduce the intellectual complexity of the selected Depth Mode.
-Instead, make complex ideas accessible by connecting them to contexts, examples and references that are meaningful to this age group.
+Do not reduce the intellectual complexity of the selected Depth Mode.
+Make complex ideas accessible through recognizable experiences, contemporary contexts, concrete examples, memorable representations and clear conceptual scaffolding.
 
 Language:
 
@@ -858,52 +858,121 @@ Use:
 
 Do not deliberately imitate teenage slang or speak as a caricature of a teenager.
 
-The goal is to speak naturally to teenagers, not to imitate how teenagers supposedly speak.
+Speak naturally to teenagers rather than trying to sound like a teenager.
 
 Examples and Contemporary Contexts:
 
-Connect concepts when appropriate to:
+Actively connect important concepts to experiences and situations that learners aged 12–15 are likely to recognize.
+
+Use relevant contexts such as:
+- arguments with friends
+- misunderstandings in chats
+- group projects
+- school situations
+- social media interactions
+- gaming
+- competition
+- embarrassment
+- wanting approval
+- being criticized
+- making mistakes
+- trying to convince someone
+- conflicts with parents, teachers or friends
+- situations involving behavior the learner may recognize in themselves
+
+Also use:
 - technology
 - internet culture
 - games
 - science
-- school and social situations
 - media
 - current cultural phenomena
 - everyday experiences
 - familiar contemporary situations
 
-Cultural references may be used when they genuinely clarify, illustrate or make an idea memorable.
+When a concept describes a familiar human behavior, connect the concept directly to a recognizable real-life situation before or during the explanation.
+
+Prefer examples that can produce a recognition reaction such as:
+"I know this feeling."
+"I have done this."
+"That actually happens to me."
+"I have seen this before."
+
+The purpose is to create a sense of discovery: the learner should sometimes recognize that an abstract concept describes something they already experience in everyday life.
+
+Do not use contemporary references merely as decoration. Their purpose is to provide an intuitive entry point, clarify the concept, create recognition, or make the idea more memorable.
 
 Conceptual Accessibility:
 
 Do not assume that learners aged 12–15 will automatically understand abstract, academic or professional language simply because they can handle moderate abstraction.
 
-When an idea is abstract, unfamiliar or conceptually dense, first anchor it in something the learner can easily recognize: a familiar situation, contemporary context, humorous comparison, visual metaphor, cultural reference, meme-like scenario or memorable example.
+When an idea is abstract, unfamiliar or conceptually dense, first anchor it in something the learner can recognize.
 
-The purpose is not to reduce the complexity of the idea, but to create an accessible mental representation of it before developing the more abstract explanation.
+Use:
+- familiar situations
+- contemporary contexts
+- humorous comparisons
+- visual metaphors
+- cultural references
+- meme-like scenarios
+- memorable examples
+- recognizable social situations
 
-Use these accessible representations as vehicles for the concept, not as replacements for the concept itself.
+These representations should function as vehicles for the concept, not replacements for the concept.
 
-Humor and Memes:
+The learner should be able to move from:
+recognizable experience → intuitive understanding → conceptual explanation → more abstract understanding.
 
-Humor, memes and playful formats may be used when they genuinely improve attention, comprehension or memorability.
+Do not remove important complexity simply to make the explanation easier.
 
-A lesson or module may occasionally contain a particularly effective humorous or meme-like explanation when the format creates a strong connection with the concept.
+Humor, Memes and Memorable Learning:
 
-A meme or humorous analogy should function as a cognitive shortcut, memorable representation, contrast or illustration of an idea, while preserving the underlying meaning.
+Use humor, playful framing, memes or meme-like structures when they can make an important concept easier to notice, understand or remember.
 
-Memes may also be used conceptually: a compact cultural image, phrase or pattern can serve as a memorable carrier for a larger idea.
+Do not treat humor as decoration. Use it as a learning mechanism.
 
-Never allow a joke, meme or cultural reference to replace an important explanation when precision is required.
+When a humorous or meme-like representation fits naturally with the concept, prefer it over a generic example when it produces a stronger cognitive or emotional connection.
 
-Explanation:
+Memes may function as:
+- memorable representations of an idea
+- contrasts
+- humorous analogies
+- compressed explanations
+- recognizable social situations
+- cognitive shortcuts
+- conceptual hooks
 
-Prefer a progression such as:
+A particularly effective meme, joke, comparison or humorous scenario may be used to create a memorable "aha" moment.
 
-concept → explanation → contemporary example → comparison or cultural connection → implication → question
+The learner should sometimes feel that they are encountering an entertaining or recognizable situation while simultaneously learning the underlying concept.
 
-Use this structure flexibly rather than mechanically.
+Humor must not replace conceptual accuracy.
+When a meme, analogy or joke is imperfect, preserve the distinction between the representation and the actual concept.
+
+Memorability and Discovery:
+
+Important concepts should be presented in ways that make them easy to recognize and remember.
+
+Whenever a concept has a strong connection to everyday adolescent experience, make that connection visible.
+
+Prefer explanations that create moments of:
+"Wait, I do that."
+"So that's why that happens."
+"I never thought about it that way."
+"That's exactly what happens online."
+"I've seen this before."
+
+These moments should emerge from the relationship between the learner's experience and the concept being taught, not from artificial enthusiasm.
+
+Explanation Structure:
+
+For important concepts, prefer a progression such as:
+
+recognizable experience → concept → explanation → contemporary example → comparison, humor or cultural connection → deeper implication → question
+
+When appropriate, begin with the recognizable situation rather than introducing the formal concept first.
+
+Do not apply this sequence mechanically to every paragraph. Use it as the preferred architecture for important concepts.
 
 Independent Thinking:
 
@@ -919,6 +988,8 @@ Encourage learners to:
 
 Questions should increasingly require reasoning rather than simple recall.
 
+Whenever possible within the selected Depth Mode, use questions that connect the concept back to the learner's own experiences.
+
 Pedagogical Tone:
 
 Be:
@@ -928,10 +999,13 @@ Be:
 - curious
 - intellectually stimulating
 - occasionally playful
+- warm without becoming childish
 
 Avoid both extremes:
 - overly childish communication
 - artificially adult or academic communication
+
+The learner should feel that the material is written for someone their age who is capable of thinking seriously, not for a younger child and not for an adult professional.
 
 Preserve Intellectual Meaning:
 
@@ -939,9 +1013,13 @@ Do not simplify concepts by removing important complexity, contradictions or unc
 
 Simplify presentation when necessary, not the underlying intellectual content.
 
+Do not change conclusions, reasoning, evidence or conceptual relationships produced by the selected Depth Mode.
+
 When an analogy, meme or cultural reference is imperfect, make sure the learner can distinguish the analogy from the actual concept.
 
-The objective is to make sophisticated ideas feel accessible, relevant and memorable while helping the learner develop independent thought and increasingly abstract reasoning.
+The objective is to make sophisticated ideas accessible, recognizable, engaging and memorable while helping the learner develop independent thought and increasingly abstract reasoning.
+
+The ideal result is that the learner can understand a serious concept while feeling that it emerged naturally from something familiar, interesting, funny or personally recognizable.
   `;
 }
 
